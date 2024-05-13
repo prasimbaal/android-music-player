@@ -1,5 +1,4 @@
-
-+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,11 +21,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="195dp"
-        android:layout_height="169dp"
+        android:layout_width="149dp"
+        android:layout_height="150dp"
         android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="179dp" />
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="152dp" />
 
     <TextView
         android:id="@+id/song_title"
@@ -35,14 +34,14 @@
         android:text="Song Title"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="392dp" />
+        tools:layout_editor_absoluteY="380dp" />
 
     <Button
         android:id="@+id/back_btn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/back_icon"
-        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="477dp" />
 
     <Button
@@ -63,11 +62,21 @@
 
     <Button
         android:id="@+id/play_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="75dp"
+        android:layout_height="58dp"
         android:background="@drawable/play_icon"
-        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="477dp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause_btn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,7 +29,7 @@
 
             <TextView
                 android:id="@+id/notification_title"
-                android:layout_width="175dp"
+                android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:ellipsize="end"
                 android:maxLines="1"
@@ -40,7 +40,7 @@
 
             <TextView
                 android:id="@+id/notification_artist"
-                android:layout_width="175dp"
+                android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
@@ -52,3 +52,48 @@
                 android:textSize="29sp" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Previous Button -->
+            <ImageButton
+                android:id="@+id/notification_previous"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="previous"
+                android:padding="12dp"
+                android:src="@drawable/previous" />
+
+            <!-- Play/Pause Button -->
+            <ImageButton
+                android:id="@+id/notification_play_pause"
+                android
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="play"
+                android:padding="12dp"
+                android:src="@drawable/play_icon"
+                android:tint="#7b2cbf" />
+
+            <!-- Next Button -->
+            <ImageButton
+                android:id="@+id/notification_next"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="next"
+                android:padding="12dp"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

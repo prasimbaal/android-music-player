@@ -23,9 +23,10 @@
         android:id="@+id/imageView"
         android:layout_width="149dp"
         android:layout_height="150dp"
+        android:clickable="true"
         android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="152dp" />
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="166dp" />
 
     <TextView
         android:id="@+id/song_title"
@@ -33,8 +34,18 @@
         android:layout_height="wrap_content"
         android:text="Song Title"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Artist name"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/song_title"
+        tools:layout_editor_absoluteX="134dp" />
 
     <Button
         android:id="@+id/back_btn"

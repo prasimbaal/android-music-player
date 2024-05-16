@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
+    android:background="@drawable/notnot"
     tools:context=".MainActivity2">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Music Player App"
-        android:textColor="@color/white"
+        android:textColor="#7b2cbf"
         android:textSize="32sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="80dp"
@@ -33,27 +33,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Song Title"
+        android:textColor="#7b2cbf"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        tools:layout_editor_absoluteY="349dp" />
+        tools:layout_editor_absoluteY="419dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Artist name"
+        android:textColor="#7b2cbf"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/song_title"
-        tools:layout_editor_absoluteX="134dp" />
+        tools:layout_editor_absoluteX="143dp" />
 
     <Button
         android:id="@+id/back_btn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/back_icon"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="535dp" />
 
     <Button
         android:id="@+id/forward_btn"
@@ -61,29 +64,29 @@
         android:layout_height="60dp"
         android:background="@drawable/forward_icon"
         tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteY="535dp" />
 
     <Button
         android:id="@+id/pause_btn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/pause_icon"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="535dp" />
 
     <Button
         android:id="@+id/play_btn"
         android:layout_width="75dp"
         android:layout_height="58dp"
         android:background="@drawable/play_icon"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="537dp" />
 
     <SeekBar
         android:id="@+id/seek_bar"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

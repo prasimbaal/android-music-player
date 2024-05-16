@@ -1,6 +1,7 @@
 package com.example.musicplayerapp
 
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -26,8 +27,21 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
+        }
+    val albumArt :ImageView = findViewById(R.id.imageView)
+//    albumArt.setOnClickListener{
+//        browseLocalStorage()
+//
+//    }
+
+    private fun browseLocalStorage(){
+
     }
+
 }
+
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {

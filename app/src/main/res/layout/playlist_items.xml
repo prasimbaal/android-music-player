@@ -10,7 +10,7 @@
     <Button
         android:id="@+id/search_button"
         android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="0sp"
         android:layout_marginEnd="8dp"
@@ -19,7 +19,7 @@
     <Button
         android:id="@+id/playlist_button"
         android:layout_width="50dp"
-        android:layout_height="wrap_content"
+        android:layout_height="39dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="50dp"
         android:background="@drawable/playlist" />
@@ -29,14 +29,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="10dp"
         android:text="All Songs"
         android:textAlignment="textStart"
         android:textColor="#7b2cbf"
         android:textSize="30dp"
-        android:textStyle="bold">
-    </TextView>
+        android:textStyle="bold"></TextView>
 
     <SearchView
         android:id="@+id/searchView"
@@ -202,17 +201,19 @@
                 android:background="@drawable/shuffle_off"
                 />
 
-
         </LinearLayout>
 
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <com.ex.musicplayer.CustomVisualizerView
+        android:id="@+id/visualizerView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/recyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="#FFFFFF"
         />
+    </LinearLayout>
 
 
 </RelativeLayout>

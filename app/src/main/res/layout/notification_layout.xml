@@ -74,14 +74,12 @@
             <!-- Play/Pause Button -->
             <ImageButton
                 android:id="@+id/notification_play_pause"
-                android
                 android:layout_width="70dp"
                 android:layout_height="48dp"
                 android:background="?android:attr/selectableItemBackground"
                 android:contentDescription="play"
                 android:padding="12dp"
-                android:src="@drawable/play_icon"
-                android:tint="#7b2cbf" />
+                android:src="@drawable/play_icon" />
 
             <!-- Next Button -->
             <ImageButton
@@ -94,8 +92,5 @@
                 android:src="@drawable/next" />
 
         </LinearLayout>
-
     </LinearLayout>
-
-
 </LinearLayout>

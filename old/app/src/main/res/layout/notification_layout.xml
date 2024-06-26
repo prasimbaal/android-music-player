@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="0dp">
+
+    <!-- Album Art -->
+    <ImageView
+        android:id="@+id/notification_album_art"
+        android:layout_width="91dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/audio_album_art"
+        android:scaleType="centerCrop"
+        android:src="@drawable/audioicon"
+        android:background="@drawable/not1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/not1">
+        <!-- Title and Artist -->
+
+        <!-- Playback Controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/song_title"
+                android:textColor="#7b2cbf"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/notification_artist"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/artist"
+
+                android:textColor="#7b2cbf"
+                android:textSize="29sp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <!-- Previous Button -->
+            <ImageButton
+                android:id="@+id/notification_previous"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/previous"
+                android:padding="12dp"
+                android:src="@drawable/previous"
+                tools:ignore="ImageContrastCheck" />
+
+            <!-- Play/Pause Button -->
+            <ImageButton
+                android:id="@+id/notification_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/play"
+                android:padding="12dp"
+                android:src="@drawable/play_icon"
+                app:tint="#7b2cbf"
+                tools:ignore="MissingPrefix,ImageContrastCheck" />
+
+            <!-- Next Button -->
+            <ImageButton
+                android:id="@+id/notification_next"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/next"
+                android:padding="12dp"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
